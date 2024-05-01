@@ -146,6 +146,12 @@ button i {
     background-color: white;
 
 }
+.all-summary{
+   
+    background-color: white;
+    border-radius: var(--border-radius-small);
+    margin: 0.5rem;
+}
 
 .send-money-heading p {
     text-align: left;
@@ -159,6 +165,8 @@ button i {
 .monthly-balance{
     background-color: var(--blue-dark);
     color: white;
+    border-radius: var(--border-radius-small);
+    margin: 0.5rem;
 }
 
 .send-money-button {

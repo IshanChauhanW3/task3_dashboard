@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DashBoard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assests/stylesheet/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container text-center">
+      <div class="row greybg">
+        <div class="col-1 profile-column border">
+          <div class="row row-top justify-content-center">
+            <div class="profile"><a class="text-white" href="">P</a></div>
+          </div>
+          <div class="row row-mddle justify-content-center">
+            <ul class="navoptions">
+              <li><i class="fa fa-bars" aria-hidden="true"></i></li>
+              <li><i class="fa fa-sheqel" aria-hidden="true"></i></li>
+              <li><i class="fa fa-book" aria-hidden="true"></i></li>
+              <li><i class="fa fa-child" aria-hidden="true"></i></li>
+              <li><i class="fa fa-comments" aria-hidden="true"></i></li>
+              <li><i class="fa fa-gears" aria-hidden="true"></i></li>
+            </ul>
+          </div>
+          <div class="row row-bottom justify-content-center">
+            <div class="profile">
+              <img
+                src="https://www.shutterstock.com/image-vector/headphones-logo-can-be-used-600nw-1612779220.jpg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-7 border">
+          <div class="row">
+            <div class="col-7">
+              <form class="d-flex" role="search">
+                <i class="fa fa-search"></i>
+                <input
+                  class="form-control border-0 me-1"
+                  type="search"
+                  placeholder="search"
+                  aria-label="Search"
+                />
+                <button class="filter-button" type="submit">
+                  Filters<i class="fa fa-angle-down"></i>
+                </button>
+              </form>
+            </div>
+            <div class="col notification">
+              <button type="button" class="btn btn-light notification-button">
+                <i class="fa fa-bell"></i>
+              </button>
+            </div>
+          </div>
+          <div class="row send-money">
+            <div class="row send-money-heading">
+              <p class="h6">Send Money</p>
+            </div>
+            <div class="row">
+              <div class="col-7">
+                <div class="row p-2 bg-white">
+                  <div class="col-6 p-2">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected></option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-6 p-2 ">
+                    <div class="row">
+                      <p class="small-grey">amount</p>
+                    </div>
+                    <div class="row">
+                      <p class="bold-black fw-medium">$800.0</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-2 bg-white">
+                  <div class="col p-2">
+                    <p class="small-grey">Active Balance</p>
+                    <p class="text-black small-grey">$18,350</p>
+                  </div>
+                  <div class="col send-money-button">
+                    <button
+                      class="filter-button bg-primary text-white"
+                      type="submit"
+                    >
+                      Send Money
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-5 monthly-balance">
+                <div class="row py-2">
+                  <p class="h6 p-2 fw-light">Send Money</p>
+                </div>
+                <div class="row">
+                  <p class="bold-black fw-medium p-2">$800.0</p>
+                  <div class="px-2">
+                    <div
+                      class="progress my-2"
+                      role="progressbar"
+                      aria-label="Example 1px high"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="height: 5px"
+                    >
+                      <div
+                        class="progress-bar bg-white"
+                        style="width: 25%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 border">Column</div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -18,13 +18,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://code.highcharts.com/highcharts.js"></script>
   </head>
   <body>
     <div class="container text-center">
       <div class="row greybg">
         <div class="col-1 profile-column border">
           <div class="row row-top justify-content-center">
-            <div class="profile"><a class="text-white" href="">P</a></div>
+            <div class="profile m-2"><a class="text-white" href="">P</a></div>
           </div>
           <div class="row row-mddle justify-content-center">
             <ul class="navoptions">
@@ -45,8 +46,8 @@
           </div>
         </div>
 
-        <div class="col-7 border">
-          <div class="row">
+        <div class="col-8 border">
+          <div class="row mt-2">
             <div class="col-7">
               <form class="d-flex" role="search">
                 <i class="fa fa-search"></i>
@@ -72,79 +73,294 @@
               <p class="h6">Send Money</p>
             </div>
             <div class="row">
-              <div class="col-7 all-summary">
-                <div class="row p-2 bg-white">
-                  <div class="col-6 p-2">
-                    <select
-                      class="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option selected></option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                  <div class="col-6 p-2 ">
-                    <div class="row">
-                      <p class="small-grey">amount</p>
+              <div></div>
+              <div class="col-8">
+                <div class="round-cards">
+                  <div class="row px-1 py-3 bg-white">
+                    <div class="col-6">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected></option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
                     </div>
-                    <div class="row">
+                    <div class="col-6 flex-column-end">
+                      <p class="small-grey">amount</p>
+
                       <p class="bold-black fw-medium">$800.0</p>
                     </div>
                   </div>
-                </div>
-                <div class="row p-2 bg-white">
-                  <div class="col p-2">
-                    <p class="small-grey">Active Balance</p>
-                    <p class="text-black small-grey">$18,350</p>
-                  </div>
-                  <div class="col send-money-button">
-                    <button
-                      class="filter-button bg-primary text-white"
-                      type="submit"
-                    >
-                      Send Money
-                    </button>
+                  <div class="row px-1 py-3 bg-white">
+                    <div class="col">
+                      <p class="small-grey">Active Balance</p>
+                      <p class="text-black small-grey">$18,350</p>
+                    </div>
+                    <div class="col send-money-button flex-column-end">
+                      <button
+                        class="filter-button m-0 bg-primary text-white"
+                        type="submit"
+                      >
+                        Send Money
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-4 monthly-balance">
-                <div class="row py-2">
-                  <p class="h6 p-2 fw-light">Send Money</p>
-                </div>
-                <div class="row">
-                  <p class="bold-black fw-medium p-2">$800.0</p>
-                  <div class="px-2">
-                    <div
-                      class="progress my-2"
-                      role="progressbar"
-                      aria-label="Example 1px high"
-                      aria-valuenow="25"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="height: 5px"
-                    >
+              <div class="col-4">
+                <div class="round-cards-blue">
+                  <div class="row py-3 px-2">
+                    <p class="h6 fw-light">Monthly Balance</p>
+                  </div>
+                  <div class="row py-3 px-2">
+                    <p class="bold-black fw-medium">$800.0</p>
+                    <div class="">
                       <div
-                        class="progress-bar bg-white"
-                        style="width: 25%"
-                      ></div>
+                        class="progress my-2"
+                        role="progressbar"
+                        aria-label="Example 1px high"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="height: 5px"
+                      >
+                        <div
+                          class="progress-bar bg-white"
+                          style="width: 25%"
+                        ></div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="row">
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
+            <div class="row my-4">
+              <div class="col">
+                <div class="round-cards">
+                  <div class="row px-1 py-3">
+                    <div class="col-6 flex-column-start">
+                      <i class="fa fa-pie-chart background-effect"></i>
+                    </div>
+                    <div class="col-6 flex-column-end">
+                      <p class="bold-black fw-medium">$800.0</p>
+
+                      <p class="small-grey">income</p>
+                    </div>
+                  </div>
+                  <div class="row px-1 py-3">
+                    <div class="col">
+                      <p class="small-grey">Balance up by</p>
+                    </div>
+                    <div class="col">
+                      <p class="small-grey flex-column-end">+12.57%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="round-cards">
+                  <div class="row px-1 py-3">
+                    <div class="col-6 flex-column-start">
+                      <i class="fa fa-pie-chart background-effect"></i>
+                    </div>
+                    <div class="col-6 flex-column-end">
+                      <p class="bold-black fw-medium">$800.0</p>
+
+                      <p class="small-grey">income</p>
+                    </div>
+                  </div>
+                  <div class="row px-1 py-3">
+                    <div class="col">
+                      <p class="small-grey">Balance up by</p>
+                    </div>
+                    <div class="col">
+                      <p class="small-grey flex-column-end">+12.57%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="round-cards">
+                  <div class="row px-1 py-3">
+                    <div class="col-6 flex-column-start">
+                      <i class="fa fa-pie-chart background-effect"></i>
+                    </div>
+                    <div class="col-6 flex-column-end">
+                      <p class="bold-black fw-medium">$800.0</p>
+
+                      <p class="small-grey">income</p>
+                    </div>
+                  </div>
+                  <div class="row px-1 py-3">
+                    <div class="col">
+                      <p class="small-grey">Balance up by</p>
+                    </div>
+                    <div class="col">
+                      <p class="small-grey flex-column-end">+12.57%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row analysis">
+            <div class="col-7">
+              <div class="row">
+                <p class="h6 p-1">Balance Analytic</p>
+              </div>
+              <div class="round-cards mb-3">
+                <div class="row">
+                  <div class="col p-0 mb-4">
+                    <div
+                      id="chart"
+                      style="min-width: 100%; height: 290px"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="row">
+                <p class="h6 p-1">Investment</p>
+              </div>
+              <div class="company-cards px-1 py-3">
+                <div class="row">
+                  <div class="col-2">
+                    <i class="fa fa-facebook background-effect"></i>
+                  </div>
+                  <div class="col-5">
+                    <p class="bold-black company-card-style1">FB2A.BE</p>
+                    <p class="small-grey company-card-style1">facebook</p>
+                  </div>
+                  <div class="col-5 flex-column-end">
+                    <p class="bold-black company-card-style1">4,987.80</p>
+                    <p class="small-grey company-card-style2">+19.77</p>
+                  </div>
+                </div>
+              </div>
+              <div class="company-cards px-1 py-3 my-4">
+                <div class="row">
+                  <div class="col-2">
+                    <i class="fa fa-facebook background-effect"></i>
+                  </div>
+                  <div class="col-5">
+                    <p class="bold-black company-card-style1">FB2A.BE</p>
+                    <p class="small-grey company-card-style1">facebook</p>
+                  </div>
+                  <div class="col-5 flex-column-end">
+                    <p class="bold-black company-card-style1">4,987.80</p>
+                    <p class="small-grey company-card-style2">+19.77</p>
+                  </div>
+                </div>
+              </div>
+              <div class="company-cards px-1 py-3 my-4">
+                <div class="row">
+                  <div class="col-2">
+                    <i class="fa fa-facebook background-effect"></i>
+                  </div>
+                  <div class="col-5">
+                    <p class="bold-black company-card-style1">FB2A.BE</p>
+                    <p class="small-grey company-card-style1">facebook</p>
+                  </div>
+                  <div class="col-5 flex-column-end">
+                    <p class="bold-black company-card-style1">4,987.80</p>
+                    <p class="small-grey company-card-style2">+19.77</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-4 border">Column</div>
+        <div class="col-3 border">
+          <div>
+            <div class="heading mt-4">
+              <p class="h6">Hello, Sir</p>
+              <p class="small-grey">Welcome to the pocket dashboard</p>
+            </div>
+
+            <p class="mt-4 h6">My Cards</p>
+            <div class="my-cards right-div">
+              <div class="creditImg">
+                <img
+                  class="img"
+                  src="https://pngimg.com/d/credit_card_PNG135.png"
+                  alt=""
+                />
+              </div>
+              <div class="p-4">
+                <p class="bold-black h5">$ 18,350</p>
+                <p class="small-grey">Active Balance</p>
+              </div>
+            </div>
+
+            <p class="mt-3 h6">Recent Transactions</p>
+
+            <div class="row mt-3">
+              <div class="col-2">
+                <i class="fa fa-pinterest-p cricle transaction-icon"></i>
+              </div>
+              <div class="col-5">
+                <p class="paypal">PayPal</p>
+                <p class="small-grey">July 10, 2023</p>
+              </div>
+              <div class="col-5">
+                <p class="increment">+$296.23</p>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-2">
+                <i class="fa fa-pinterest-p cricle transaction-icon"></i>
+              </div>
+              <div class="col-5">
+                <p class="paypal">PayPal</p>
+                <p class="small-grey">July 10, 2023</p>
+              </div>
+              <div class="col-5">
+                <p class="increment">+$296.23</p>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-2">
+                <i class="fa fa-pinterest-p cricle transaction-icon"></i>
+              </div>
+              <div class="col-5">
+                <p class="paypal">PayPal</p>
+                <p class="small-grey">July 10, 2023</p>
+              </div>
+              <div class="col-5">
+                <p class="increment">+$296.23</p>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-2">
+                <i class="fa fa-pinterest-p cricle transaction-icon"></i>
+              </div>
+              <div class="col-5">
+                <p class="paypal">PayPal</p>
+                <p class="small-grey">July 10, 2023</p>
+              </div>
+              <div class="col-5">
+                <p class="increment">+$296.23</p>
+              </div>
+            </div>
+
+            <p class="bold-black h6 my-4">Find Us</p>
+            <div class="img-container px-3 pb-4">
+              <img
+                src="https://www.google.com/maps/d/thumbnail?mid=1gaQSzilmEXF7ALoUH7VAifYe9fg&hl=en_US"
+                class=""
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="./assests/javascript/app.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -239,6 +239,7 @@ button i {
 
 .img {
     width: 130px;
+    padding-top: 6px;
     padding-left: 10px;
     height: auto;
     object-fit: cover;
@@ -291,7 +292,7 @@ button i {
 }
 
 .img-container img {
-    margin-top: 5px;
+    
     border:4px solid white;
     height: 100%;
     width: 100%;

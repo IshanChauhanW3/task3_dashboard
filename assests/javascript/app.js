@@ -13,3 +13,5 @@ var chart = new Highcharts.Chart({
     }]
 
 });
+
+var slider=document.getElementById('slider');

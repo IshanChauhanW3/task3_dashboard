@@ -25,13 +25,9 @@ p {
 
 }
 
-.row {
-    /* border: 2px solid; */
-
-}
-
 .dashboard {
     display: flex;
+    background-color: var(--gray-shade1);
 
 }
 
@@ -43,13 +39,21 @@ p {
     height: calc(100vh);
     left: 0;
     transition: 0.3s;
+    
+}
+
+.responsive-container {
+    display: flex;
+    padding: 0;
+    width: calc(100%-100px);
+    margin-left: 100px; 
+    transition: 0.3s;
 
 }
 
 .middlebar {
 
     width: calc(100%-600px);
-    margin-left: 100px;
     min-height: calc(100vh);
     background-color: var(--gray-shade1);
     transition: 0.3s;
@@ -58,7 +62,8 @@ p {
 .rightbar {
 
     width: 500px;
-    height: calc(100vh);
+    height: calc(200vh);
+    background-color: white;
 
 }
 
@@ -258,7 +263,7 @@ button i {
 .background-effect {
     background-color: var(--gray-shade1);
     border-radius: 50%;
-    padding: 0.5rem;
+    padding: 0.3rem 0.5rem;
 }
 
 .company-cards {
@@ -280,7 +285,7 @@ button i {
 .img {
     width: 130px;
     padding-top: 6px;
-    padding-left: 10px;
+
     height: auto;
     object-fit: cover;
 }
@@ -311,7 +316,10 @@ button i {
     border-radius: 50%;
     background-color: skyblue;
     font-size: 12px;
+}
 
+.left {
+    margin-left: -10px;
 }
 
 .paypal {
@@ -327,7 +335,6 @@ button i {
 
 .img-container {
     display: flex;
-    justify-content: center;
 
 }
 
@@ -341,51 +348,177 @@ button i {
 
 }
 
-.responsive-container {
-    display: flex;
+.slide .profile-column {
+
+    left: -100px;
+    transition: 0.3s;
+
 }
 
-.slide .profile-column{
-   
-    left:-100px;
-    transition:0.3s;
-    
-}
-.slide .middlebar{
+.slide .responsive-container {
     margin-left: 0;
     transition: 0.3s;
 }
-.slide-button{
-   color:black;  
-    
+
+.slide-button {
+    color: black;
+
 }
-.slide-button i{
+
+.slide-button i {
     font-size: larger;
+}
+
+.filter-button-mobile {
+    display: none;
 }
 
 @media screen and (max-width:1080px) {
     .responsive-container {
         flex-direction: column;
+        width: calc(100%-90px);
+        margin-left: 90px;
+
     }
 
     .profile-column {
-        width: 100px;
+        width: 90px;
+        border: 2px solid black;
 
     }
 
     .middlebar {
-        width: calc(100%-200px);
-        margin-left: 100px;
+        margin-left: 0;
         min-height: 50vh;
     }
 
     .rightbar {
         width: 100%;
-        margin-left: 100px;
         background-color: var(--gray-shade1);
+        margin-left: 0;
+        padding-left: 2rem;
     }
 
     .profile-column {
         height: 100%;
+
     }
+
+    .hide .profile-column {
+        left: -100px
+    }
+
+    .hide .responsive-container {
+        margin-left: 0;
+    }
+
+    .slide .responsive-container {
+        margin-left: 90px;
+
+    }
+
+    .slide .profile-column {
+        left: 0;
+    }
+    .left{
+        margin-left: -6vw;
+    }
+    
+}
+
+@media screen and (max-width:766px) {
+    .responsive-container {
+        width: calc(100%-80px);
+
+    }
+
+    .profile-column {
+        width: 80px;
+    }
+
+    .row>* {
+        /* border: 2px solid; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .send-money .h6 {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .send-money-heading {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .header-section{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .slide-button{
+        padding-top: 20px;
+    }
+    .left{
+        margin-left: -5vw;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+    .filter-button {
+        display: none;
+        padding: 0;
+    }
+
+    .form-control {
+        font-size: 15px;
+    }
+
+    form i {
+        color: black;
+    }
+
+    .filter-button-mobile {
+        font-size: x-small;
+        margin: 0.5rem 0;
+        border: none;
+        border-radius: 10px;
+        color: var(--blue-dark);
+        display: flex;
+    }
+
+    .notification-button {
+        padding: 5px;
+    }
+    .left{
+        margin-left: -3vw;
+    }
+
+}
+
+@media screen and (max-width:460px) {
+
+    .form-control {
+        font-size: 10px;
+
+    }
+
+    form i {
+        color: black;
+    }
+
+    .img-container img {
+
+        border: 4px solid white;
+        height: 120px;
+        width: 300px;
+        object-fit: cover;
+        border-radius: var(--border-radius-small);
+
+    }
+    .left{
+        margin-left: -1vh;
+    }
+
 }

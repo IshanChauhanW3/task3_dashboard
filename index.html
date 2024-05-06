@@ -10,6 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="./assests/stylesheet/style.css" />
     <link
       rel="stylesheet"
@@ -23,8 +24,8 @@
   <body>
     <section>
       <div class="text-center">
-        <div id="slide" class="">
-          <div class="row dashboard">
+        <div id="slide" class="hide">
+          <div class="dashboard">
             <div class="profile-column container-fluid">
               <div class="row row-top justify-content-center">
                 <div class="profile m-2">
@@ -57,13 +58,16 @@
                 </div>
               </div>
             </div>
-            <div class="responsive-container">
+            <div class="responsive-container container-fluid">
               <div class="middlebar container-fluid">
-                <div class="row mt-2">
-                  <div class="col pt-4">
-                    <a class="slide-button" id="slider" href=""
-                      ><i class="fa fa-bars active" aria-hidden="true"></i
+                <div class="row mt-2 header-section ">
+                  <div class="col-1 pt-md-4 pt-4">
+                   
+                      <a class="slide-button" id="slider" href=""
+                      ><i class="fa fa-bars active pt-md-1 pt-2" aria-hidden="true"></i
                     ></a>
+                   
+                    
                   </div>
                   <div class="col-6">
                     <form class="d-flex" role="search">
@@ -77,6 +81,9 @@
                       <button class="filter-button" type="submit">
                         Filters<i class="fa fa-angle-down"></i>
                       </button>
+                      <button class="filter-button-mobile" type="submit">
+                        <i class="fa fa-angle-down"></i>
+                      </button>
                     </form>
                   </div>
                   <div class="col-5 notification">
@@ -88,15 +95,14 @@
                     </button>
                   </div>
                 </div>
-                <div class="row send-money">
+                <div class="row send-money ">
                   <div class="row send-money-heading">
                     <p class="h6">Send Money</p>
                   </div>
-                  <div class="row">
-                    <div></div>
-                    <div class="col-8">
+                  <div class="row">              
+                    <div class="col-md-8">
                       <div class="round-cards">
-                        <div class="row px-1 py-3 bg-white">
+                        <div class="row px-1 py-3">
                           <div class="col-6">
                             <select
                               class="form-select"
@@ -114,7 +120,7 @@
                             <p class="bold-black fw-medium">$800.0</p>
                           </div>
                         </div>
-                        <div class="row px-1 py-3 bg-white">
+                        <div class="row px-1 py-3">
                           <div class="col">
                             <p class="small-grey">Active Balance</p>
                             <p class="text-black small-grey">$18,350</p>
@@ -130,7 +136,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4">
                       <div class="round-cards-blue">
                         <div class="row py-3 px-2">
                           <p class="h6 fw-light">Monthly Balance</p>
@@ -159,7 +165,7 @@
                   </div>
 
                   <div class="row my-4">
-                    <div class="col">
+                    <div class="col-md-4">
                       <div class="round-cards">
                         <div class="row px-1 py-3">
                           <div class="col-6 flex-column-start">
@@ -181,7 +187,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-4">
                       <div class="round-cards">
                         <div class="row px-1 py-3">
                           <div class="col-6 flex-column-start">
@@ -203,7 +209,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-4">
                       <div class="round-cards">
                         <div class="row px-1 py-3">
                           <div class="col-6 flex-column-start">
@@ -228,7 +234,7 @@
                   </div>
                 </div>
                 <div class="row analysis">
-                  <div class="col-7">
+                  <div class="col-md-7">
                     <div class="row">
                       <p class="h6 p-1">Balance Analytic</p>
                     </div>
@@ -243,7 +249,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-5">
+                  <div class="col-md-5">
                     <div class="row">
                       <p class="h6 p-1">Investment</p>
                     </div>
@@ -319,7 +325,19 @@
 
                   <p class="mt-4 h6">Recent Transactions</p>
 
-                  <div class="row mt-3">
+                  <div class="row mt-3 left">
+                    <div class="col-2 ">
+                      <i class="fa fa-pinterest-p cricle transaction-icon"></i>
+                    </div>
+                    <div class="col-5">
+                      <p class="paypal">PayPal</p>
+                      <p class="small-grey">July 10, 2023</p>
+                    </div>
+                    <div class="col-5">
+                      <p class="increment">+$296.23</p>
+                    </div>
+                  </div>
+                  <div class="row mt-3 left">
                     <div class="col-2">
                       <i class="fa fa-pinterest-p cricle transaction-icon"></i>
                     </div>
@@ -331,7 +349,7 @@
                       <p class="increment">+$296.23</p>
                     </div>
                   </div>
-                  <div class="row mt-3">
+                  <div class="row mt-3 left">
                     <div class="col-2">
                       <i class="fa fa-pinterest-p cricle transaction-icon"></i>
                     </div>
@@ -343,19 +361,7 @@
                       <p class="increment">+$296.23</p>
                     </div>
                   </div>
-                  <div class="row mt-3">
-                    <div class="col-2">
-                      <i class="fa fa-pinterest-p cricle transaction-icon"></i>
-                    </div>
-                    <div class="col-5">
-                      <p class="paypal">PayPal</p>
-                      <p class="small-grey">July 10, 2023</p>
-                    </div>
-                    <div class="col-5">
-                      <p class="increment">+$296.23</p>
-                    </div>
-                  </div>
-                  <div class="row mt-3">
+                  <div class="row mt-3 left">
                     <div class="col-2">
                       <i class="fa fa-pinterest-p cricle transaction-icon"></i>
                     </div>
@@ -369,7 +375,7 @@
                   </div>
 
                   <p class="bold-black h6 my-4">Find Us</p>
-                  <div class="img-container px-3">
+                  <div class="img-container">
                     <img
                       src="https://www.google.com/maps/d/thumbnail?mid=1gaQSzilmEXF7ALoUH7VAifYe9fg&hl=en_US"
                       class=""

@@ -15,3 +15,8 @@ var chart = new Highcharts.Chart({
 });
 
 var slider=document.getElementById('slider');
+slider.onclick=function(e){
+    e.preventDefault();
+    var slide=document.getElementById('slide');
+    slide.classList.toggle('slide');
+}

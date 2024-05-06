@@ -345,7 +345,7 @@ button i {
     display: flex;
 }
 
-/* .slide .profile-column{
+.slide .profile-column{
    
     left:-100px;
     transition:0.3s;
@@ -354,7 +354,14 @@ button i {
 .slide .middlebar{
     margin-left: 0;
     transition: 0.3s;
-} */
+}
+.slide-button{
+   color:black;  
+    
+}
+.slide-button i{
+    font-size: larger;
+}
 
 @media screen and (max-width:1080px) {
     .responsive-container {

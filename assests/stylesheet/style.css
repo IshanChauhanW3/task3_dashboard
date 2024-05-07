@@ -426,10 +426,9 @@ button i {
     
 }
 
-@media screen and (max-width:766px) {
-    .responsive-container {
-        width: calc(100%-80px);
-
+@media screen and (max-width:768px) {
+    .slide .responsive-container{
+        width:85%;
     }
 
     .profile-column {
@@ -496,8 +495,26 @@ button i {
     }
 
 }
+@media screen and (max-width:500px) {
+    .slide .responsive-container{
+        width:80%;
+    }
+    .profile-column{
+        width:75px;
+    }
+    .slide .middlebar{
+        padding-left: 0px;
+    }
+    .slide .rightbar{
+        padding-left: 12px;
+    }
+    
+}
 
 @media screen and (max-width:460px) {
+    .slide .responsive-container{
+        width:76%;
+    }
 
     .form-control {
         font-size: 10px;
@@ -508,17 +525,23 @@ button i {
         color: black;
     }
 
+    .slide .img-container img{
+        height: 215px;
+        width: 96%;
+
+    }
+
     .img-container img {
 
         border: 4px solid white;
-        height: 120px;
+        height: 215px;
         width: 300px;
         object-fit: cover;
         border-radius: var(--border-radius-small);
 
     }
     .left{
-        margin-left: -1vh;
+        margin-left: -1.2vh;
     }
 
 }

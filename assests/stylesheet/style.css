@@ -25,6 +25,73 @@ p {
 
 }
 
+#nav-icon1 {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-icon1 span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: var(--blue-dark);
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+    top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+    top: 12px;
+}
+
+#nav-icon1 span:nth-child(3) {
+    top: 24px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+    top: 12px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+    top: 12px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
 .dashboard {
     display: flex;
     background-color: var(--gray-shade1);
@@ -39,14 +106,14 @@ p {
     height: calc(100vh);
     left: 0;
     transition: 0.3s;
-    
+
 }
 
 .responsive-container {
     display: flex;
     padding: 0;
     width: calc(100%-100px);
-    margin-left: 100px; 
+    margin-left: 100px;
     transition: 0.3s;
 
 }
@@ -420,19 +487,24 @@ button i {
     .slide .profile-column {
         left: 0;
     }
-    .left{
+
+    .left {
         margin-left: -6vw;
     }
-    
+
 }
 
 @media screen and (max-width:768px) {
-    .slide .responsive-container{
-        width:85%;
+    .slide .responsive-container {
+        width: 85%;
     }
 
     .profile-column {
         width: 80px;
+    }
+
+    .hamburger {
+        padding-top: 35px !important;
     }
 
     .row>* {
@@ -451,17 +523,20 @@ button i {
         padding-top: 0;
         padding-bottom: 0;
     }
-    .header-section{
+
+    .header-section {
         padding-top: 0;
         padding-bottom: 0;
     }
-    .slide-button{
+
+    .slide-button {
         padding-top: 20px;
     }
-    .left{
+
+    .left {
         margin-left: -5vw;
     }
-    
+
 }
 
 @media screen and (max-width:700px) {
@@ -487,33 +562,63 @@ button i {
         display: flex;
     }
 
+    .hamburger {
+        padding-top: 30px !important;
+    }
+
     .notification-button {
         padding: 5px;
     }
-    .left{
+
+    .left {
         margin-left: -3vw;
     }
 
+    #nav-icon1 {
+        width: 30px;
+    }
+
+    #nav-icon1 span {
+        height: 4px;
+        width: 100%;
+    }
+
+    #nav-icon1 span:nth-child(1) {
+        top: 0px;
+    }
+
+    #nav-icon1 span:nth-child(2) {
+        top: 11px;
+    }
+
+    #nav-icon1 span:nth-child(3) {
+        top: 22px;
+    }
+
 }
+
 @media screen and (max-width:500px) {
-    .slide .responsive-container{
-        width:80%;
+    .slide .responsive-container {
+        width: 80%;
     }
-    .profile-column{
-        width:75px;
+
+    .profile-column {
+        width: 75px;
     }
-    .slide .middlebar{
+
+    .slide .middlebar {
         padding-left: 0px;
     }
-    .slide .rightbar{
+
+    .slide .rightbar {
         padding-left: 12px;
     }
-    
+
 }
 
 @media screen and (max-width:460px) {
-    .slide .responsive-container{
-        width:76%;
+    .slide .responsive-container {
+        width: 76%;
     }
 
     .form-control {
@@ -525,7 +630,7 @@ button i {
         color: black;
     }
 
-    .slide .img-container img{
+    .slide .img-container img {
         height: 215px;
         width: 96%;
 
@@ -540,7 +645,8 @@ button i {
         border-radius: var(--border-radius-small);
 
     }
-    .left{
+
+    .left {
         margin-left: -1.2vh;
     }
 

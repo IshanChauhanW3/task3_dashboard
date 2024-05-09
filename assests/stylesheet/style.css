@@ -313,7 +313,7 @@ button i {
 
 .small-grey {
     color: grey;
-    font-size: x-small;
+    font-size: small;
 
 }
 
@@ -346,11 +346,11 @@ button i {
 }
 
 .company-card-style1 {
-    font-size: x-small;
+    font-size: small;
 }
 
 .company-card-style2 {
-    font-size: x-small;
+    font-size: small;
     color: green;
 }
 
